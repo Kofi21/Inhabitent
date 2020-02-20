@@ -1,4 +1,9 @@
 <?php
+add_action( 'wp_enqueue_scripts', 'tthq_add_custom_fa_css' );
+
+function tthq_add_custom_fa_css() {
+wp_enqueue_style( 'custom-fa', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css' );
+}
 
 //Adds script and stylesheets
 function inhabitant_files() {

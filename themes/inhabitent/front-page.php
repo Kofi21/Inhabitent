@@ -1,4 +1,12 @@
+
+<div class="home-hero">
+    <!-- <div class="nav-header"> -->
 <?php get_header(); ?>
+    <!-- </div> -->
+    <div class="main-logo">
+    <img src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg">
+    </div>
+</div>
 
 <?php if( have_posts() ) :
 
