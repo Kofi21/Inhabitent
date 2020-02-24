@@ -55,8 +55,48 @@ table {
   border-spacing: 0; }
 
 body {
-  background: blue;
-  font-size: 2em; }
+  background-color: #ffffff;
+  font-family: Merriweather;
+  font-size: 16px;
+  font: #404040; }
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-family: Novovento Sans Web;
+  text-transform: uppercase; }
+
+.home-hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("./images/home-hero.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("./images/home-hero.jpg");
+  background-size: cover, cover; }
+
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 130px;
+  margin-right: 130px; }
+  .main-menu img {
+    width: 50px; }
+  .main-menu li {
+    display: inline-block; }
+
+.main-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%; }
 
 body {
   background-color: #ffffff;
