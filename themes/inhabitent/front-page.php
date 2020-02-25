@@ -1,19 +1,33 @@
+<!-- Hero banner -->
+<div class="hero-banner" 
+        style="background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+        url(<?php echo get_the_post_thumbnail_url();?>)"
+    >
+ <!-- Header    -->
+    <?php get_header(); ?>
+    <!-- Main Logo -->
+    <div class="main-logo">
+    <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ;?>"></a>
+    </div>
+</div>
 
-<div class="home-hero">
-    <!-- <div class="nav-header"> -->
-
-<figure>
-<?php get_header(); ?>
-     <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail(); ?>
+<!-- <figure> -->
+<!-- <?php get_header(); ?> -->
+     <!-- <h2><?php the_title(); ?></h2> -->
+     
+    <!-- <?php the_post_thumbnail(); ?> -->
     
     
-    <!-- </div> -->
+    <!-- </div>
     <div class="main-logo">
     <img src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg">
     </div>
     </figure>
-</div>
+</div> -->
 
 <?php if( have_posts() ) :
 

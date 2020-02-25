@@ -15,40 +15,25 @@ a {
   text-transform: uppercase;
 }
 
-// .home-hero {
-//   //   display: flex;
-//   //   flex-wrap: nowrap;
-//   //   align-items: center;
-//   //   text-decoration: none;
-//   background-image: linear-gradient(
-//       180deg,
-//       rgba(0, 0, 0, 0.4) 0,
-//       rgba(0, 0, 0, 0.4)
-//     ),
-//     url('./images/home-hero.jpg');
-//   background-size: cover, cover;
-//   //   height: 100vh;
-// }
+.hero-banner {
+  //   display: flex;
+  //   flex-wrap: nowrap;
+  //   align-items: center;
+  //   text-decoration: none;
+  // background-image: linear-gradient(
+  //     180deg,
+  //     rgba(0, 0, 0, 0.4) 0,
+  //     rgba(0, 0, 0, 0.4)
+  //   ),
+  //   url('./images/home-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
 // .main-menu img {
 //   width: 50px;
 // }
-
-.main-menu {
-  display: flex;
-  //   flex-wrap: nowrap;
-  justify-content: space-between;
-  margin-left: 130px;
-  margin-right: 130px;
-
-  img {
-    width: 50px;
-  }
-
-  li {
-    display: inline-block;
-  }
-}
 
 .main-logo {
   display: flex;

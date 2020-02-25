@@ -54,19 +54,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background-color: #ffffff;
-  font-family: Merriweather;
-  font-size: 16px;
-  font: #404040; }
-
-a {
-  text-decoration: none;
-  color: white;
-  margin: 10px;
-  font-family: Novovento Sans Web;
-  text-transform: uppercase; }
-
 .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,6 +67,24 @@ a {
     width: 50px; }
   .main-menu li {
     display: inline-block; }
+
+body {
+  background-color: #ffffff;
+  font-family: Merriweather;
+  font-size: 16px;
+  font: #404040; }
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-family: Novovento Sans Web;
+  text-transform: uppercase; }
+
+.hero-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
 
 .main-logo {
   display: -webkit-box;

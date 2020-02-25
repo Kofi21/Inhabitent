@@ -1,0 +1,15 @@
+.main-menu {
+  display: flex;
+  //   flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 130px;
+  margin-right: 130px;
+
+  img {
+    width: 50px;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
