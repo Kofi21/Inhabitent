@@ -1,11 +1,18 @@
 
 <div class="home-hero">
     <!-- <div class="nav-header"> -->
+
+<figure>
 <?php get_header(); ?>
+     <h2><?php the_title(); ?></h2>
+    <?php the_post_thumbnail(); ?>
+    
+    
     <!-- </div> -->
     <div class="main-logo">
     <img src="wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg">
     </div>
+    </figure>
 </div>
 
 <?php if( have_posts() ) :
@@ -14,7 +21,12 @@
     while( have_posts() ) :
         the_post(); ?>
     
-    <h2><?php the_title(); ?></h2>
+    <!-- <figure>
+     <h2><?php the_title(); ?></h2>
+    <?php the_post_thumbnail(); ?>
+    
+    </figure> -->
+    
     <h3><?php the_permalink();?></h3>
     <?php the_content(); ?>
     

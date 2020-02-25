@@ -1,20 +1,19 @@
 <?php get_header(); ?>
 
-<section class="about">
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
-    
-    <figure>
-     <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail(); ?>
-    
-    </figure>
-    
-    <h3><?php the_permalink();?></h3>
+    <div class="about"
+    style="background-image: url(<?php echo get_the_post_thumbnail_url();?>); 
+    width:100%; 
+    height:500px"
+    > 
+    <h2><?php the_title(); ?></h2>
+    </div>
+    <!-- <?php the_post_thumbnail(); ?>
+    <h3><?php the_permalink();?></h3> -->
     <?php the_content(); ?>
     
     <!-- Loop ends -->
@@ -25,6 +24,6 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-</section>
+
     
 <?php get_footer();?>
