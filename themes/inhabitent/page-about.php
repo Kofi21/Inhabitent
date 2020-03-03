@@ -1,17 +1,24 @@
-<?php get_header(); ?>
 
-<?php if( have_posts() ) :
+
+
+    <div class="about"
+    style="background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ), url(<?php echo get_the_post_thumbnail_url();?>); 
+    width:100%; 
+    height:100vh"> 
+    <?php get_header(); ?>
+    <h2><?php the_title(); ?></h2>
+    </div>
+
+    <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    <div class="about"
-    style="background-image: url(<?php echo get_the_post_thumbnail_url();?>); 
-    width:100%; 
-    height:500px"
-    > 
-    <h2><?php the_title(); ?></h2>
-    </div>
+
     <!-- <?php the_post_thumbnail(); ?>
     <h3><?php the_permalink();?></h3> -->
     <?php the_content(); ?>

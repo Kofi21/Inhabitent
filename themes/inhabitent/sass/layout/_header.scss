@@ -1,3 +1,7 @@
+header {
+  padding-top: 10px;
+}
+
 .main-menu {
   display: flex;
   //   flex-wrap: nowrap;
@@ -7,6 +11,36 @@
 
   img {
     width: 50px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-family: Novovento Sans Web;
+    text-transform: uppercase;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.main-menu2 {
+  display: flex;
+  //   flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 130px;
+  margin-right: 130px;
+
+  img {
+    width: 50px;
+  }
+  a {
+    text-decoration: none;
+    color: #248a83;
+    margin: 10px;
+    font-family: Novovento Sans Web;
+    text-transform: uppercase;
   }
 
   li {
