@@ -23,7 +23,7 @@
         the_post(); ?>
     
     <h2><?php the_title(); ?></h2>
-    <h3><?php the_permalink();?></h3>
+    <!-- <h3><?php the_permalink();?></h3> -->
     <?php the_content(); ?>
     
     <!-- Loop ends -->
@@ -34,20 +34,25 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-
-<?php 
-$terms = get_terms(array(
-    'taxonomy' => 'product-type',
-    'hide_empty' => false
-));
-
-foreach($terms as $term) :
-    $file_name = $term->name . '.svg';
-    echo "<p>";
-    echo $term->name;
-    echo "</p>";?>
-    <img src='<?php echo get_template_directory_uri() . "/images/product-type-icons/$file_name"?>'>
-<?php endforeach;?>
+<div class="content-container" >
+<h1 class="product-title">Title</h1>
+    <!-- Product Type Loop -->
+    <div class="home-product-section">
+        <?php 
+        $terms = get_terms(array(
+            'taxonomy' => 'product-type',
+            'hide_empty' => false
+        )); ?>
+        <?php
+        foreach($terms as $term) :
+            $file_name = $term->name . '.svg';?>
+        <div class="home-product-container">
+            <img src='<?php echo get_template_directory_uri() . "/images/product-type-icons/$file_name"?>'>
+            <p><?php echo $term->description;?></p>
+            <p><a href="<?php echo get_permalink() . 'product-type/' . $term->slug ?>"><?php echo $term->name;?> Stuff</a></p>
+        </div>
+            <?php endforeach;?>
+        </div>
 
 
 <!-- Custom Post Loop Starts -->
@@ -65,6 +70,7 @@ foreach($terms as $term) :
    <?php the_post_thumbnail() ?>
   
 <?php endforeach; wp_reset_postdata(); ?>
+</div>
 
     
 <?php get_footer();?>
