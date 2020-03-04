@@ -35,7 +35,7 @@
         <p>No posts found</p>
 <?php endif;?>
 <div class="content-container" >
-<h1 class="product-title">Title</h1>
+<h1 class="product-title">SHOP STUFF</h1>
     <!-- Product Type Loop -->
     <div class="home-product-section">
         <?php 
@@ -55,22 +55,25 @@
         </div>
 
 
-<!-- Custom Post Loop Starts -->
-<?php
-   $args = array( 
-       'post_type' => 'post', 
-       'order' => 'ASC',
-       'numberposts' => 3
-    );
-   $product_posts = get_posts( $args ); // returns an array of posts
 
-?>
-<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-   <?php the_title() ?>
-   <?php the_post_thumbnail() ?>
-  
-<?php endforeach; wp_reset_postdata(); ?>
-</div>
+        <div class="home-journal-section">
+        <!-- Custom Post Loop Starts -->
+        <?php
+        $args = array( 
+            'post_type' => 'post', 
+            'order' => 'ASC',
+            'numberposts' => 3
+            );
+        $product_posts = get_posts( $args ); // returns an array of posts
+        ?>
+        <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+        <div class="home-journal-container">
+            <figure><?php the_post_thumbnail(); ?></figure>
+            <p class="home-journal-small"><?php echo get_the_date();?><?php wp_count_comments() ?>Test</p>
+        </div>
+        <?php endforeach; wp_reset_postdata(); ?>
+    </div>
+
 
     
 <?php get_footer();?>

@@ -16,6 +16,11 @@
             <?php wp_nav_menu (array(
                 'theme_location' => 'main'
             ));?>
+
+            <!--SEARCH GOES HERE -->
+            <div class="header-search">
+            <?php get_search_form();?>
+            </div>
         </nav>
         
       
