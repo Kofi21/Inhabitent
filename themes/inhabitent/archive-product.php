@@ -1,5 +1,13 @@
 <?php get_header(); ?>
 
+<div class="shop-header">
+    <h2>SHOP STUFF</h2>
+            <?php wp_nav_menu (array(
+                'theme_location' => 'shop'
+            ));?>
+          
+</div>
+
 <section class="product-page">
 
 

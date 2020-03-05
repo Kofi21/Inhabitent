@@ -4,6 +4,45 @@ body {
   // margin-right: auto;
 }
 
+.main-menu2 {
+  padding-bottom: 3rem;
+}
+
+.shop-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
+    font-family: Novecento Sans Web, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-bottom: 25px;
+  }
+
+  ul {
+    display: flex;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1.2rem;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+  }
+  li {
+    margin: 0 1.5rem;
+  }
+  a {
+    color: #248a83;
+    text-decoration: none;
+  }
+}
+
 .product-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

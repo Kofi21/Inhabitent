@@ -22,7 +22,8 @@ function inhabitant_features() {
     add_theme_support('post-thumbnails');
 
     register_nav_menus(array(
-        'main' => 'Main Menu'
+        'main' => 'Main Menu',
+        'shop' => 'Shop Menu'
     ));
 
 
@@ -99,6 +100,7 @@ function inhabitent_adjust_product($query) {
     if(!is_admin() && is_post_type_archive('product')) :
         $query->set('orderby', 'title');
         $query->set('order', 'ASC');
+        $query->set('posts_per_page', '16');
     endif;
 }
 add_action('pre_get_posts', 'inhabitent_adjust_product');
