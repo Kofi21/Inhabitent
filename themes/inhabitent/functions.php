@@ -95,11 +95,11 @@ function inhabitent_post_types(){
 add_action('init', 'inhabitent_post_types');
 
 
-// function inhabitent_adjust_product($query) {
-//     if(!is_admin() && is_post_type_archive(‘product’)) :
-//         $query->set(‘orderby’, ‘title’);
-//         $query->set(‘order’, ‘ASC’);
-//     endif;
-// }
-// add_action(‘pre_get_posts’, ‘inhabitent_adjust_product’);
+function inhabitent_adjust_product($query) {
+    if(!is_admin() && is_post_type_archive('product')) :
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+    endif;
+}
+add_action('pre_get_posts', 'inhabitent_adjust_product');
 ?>

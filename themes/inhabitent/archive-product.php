@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
 <section class="product-page">
+
+
+
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
     while( have_posts() ) :

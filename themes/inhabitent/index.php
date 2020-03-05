@@ -8,7 +8,7 @@
     
     <h2><?php the_title(); ?></h2>
     <!-- <h3><?php the_permalink();?></h3> -->
-    <?php the_content(); ?>
+    <?php echo wp_trim_words(get_the_content(), 20, '[...]') ; ?>
     
     <!-- Loop ends -->
     <?php endwhile;?>
