@@ -97,6 +97,13 @@ header {
   .main-menu2 li {
     display: inline-block; }
 
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.footer-logo {
+  grid-column-start: 4; }
+
 body {
   background-color: #ffffff;
   font-family: Merriweather;
@@ -279,3 +286,11 @@ body {
     float: right;
     padding-top: 8px;
     background: #fff; }
+
+.single-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.single-products img {
+  width: 100%;
+  height: auto; }

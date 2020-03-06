@@ -10,9 +10,10 @@
     <header>
     <nav class="<?php echo is_page(array('About', 'Home')) ? 'main-menu' : 'main-menu2' ;?>">
             <!-- <a href="http://localhost:8888/red/projects/project-04/"> -->
+          <a href="<?php echo get_home_url(); ?>">
             <img src="<?php echo is_page(array('About', 'Home')) ?  get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' : 
          get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ;?> " >
-            
+            </a>
             <?php wp_nav_menu (array(
                 'theme_location' => 'main'
             ));?>

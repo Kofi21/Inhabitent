@@ -98,3 +98,13 @@ body {
     background: #fff;
   }
 }
+
+.single-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.single-products img {
+  width: 100%;
+  height: auto;
+}
