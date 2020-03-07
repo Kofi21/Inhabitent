@@ -31,9 +31,9 @@
             </a>
     </div>
 </div>
+
 <div class="copyright">
     <p>Copyright &copy 2019 Inhabitent</p>
-
 </div>
 </body>
 </html>

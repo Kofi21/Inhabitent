@@ -17,6 +17,10 @@
         <?php echo '$' . get_field('price');?>
     </span>
     <?php the_content(); ?>
+    <div class="shop-icons">
+    <i class="fab fa-facebook-f"> &nbsp; Like</i>
+    <i class="fab fa-twitter"> &nbsp; Tweet</i>
+    <i class="fab fa-pinterest"> &nbsp; Pin</i>
     </div>
 
     </div>
@@ -24,8 +28,8 @@
     
     <!-- Loop ends -->
     <?php endwhile;?>
+    </div>
 
 
 
-    
 <?php get_footer();?>
