@@ -1,32 +1,58 @@
 .journal-page-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  padding: 0 100px;
 
   .journal-page-content {
     grid-column-start: 1;
-  }
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-}
+    border-right: 1px solid lightgray;
 
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  grid-column-start: 2;
-
-  h2 {
-    font-family: Novecento Sans Web, sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
+    img {
+      // width: 100%;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      height: auto;
+    }
   }
 
-  .widget-contact-info p:nth-child(3) {
-    color: #248a83;
-  }
-  .widget-contact-info a {
-    color: #248a83;
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+
+    h2 {
+      font-family: Novecento Sans Web, sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    div {
+      padding-bottom: 50px;
+      margin-left: 25px;
+
+      h2,
+      p {
+        padding-bottom: 10px;
+      }
+    }
+    .widget-contact-info {
+      display: flex;
+      flex-direction: column;
+
+      p:nth-child(3) {
+        color: #248a83;
+      }
+      a {
+        color: #248a83;
+        text-decoration: none;
+      }
+    }
+
+    .widget-archives p {
+      color: #248a83;
+    }
   }
 }

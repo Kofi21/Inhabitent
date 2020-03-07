@@ -408,29 +408,50 @@ hr {
 
 .journal-page-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr; }
+  grid-template-columns: 2fr 1fr;
+  padding: 0 100px; }
   .journal-page-grid .journal-page-content {
-    grid-column-start: 1; }
-  .journal-page-grid img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
-
-.sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-column-start: 2; }
-  .sidebar h2 {
-    font-family: Novecento Sans Web, sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold; }
-  .sidebar .widget-contact-info p:nth-child(3) {
-    color: #248a83; }
-  .sidebar .widget-contact-info a {
-    color: #248a83; }
+    grid-column-start: 1;
+    border-right: 1px solid lightgray; }
+    .journal-page-grid .journal-page-content img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      height: auto; }
+  .journal-page-grid .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-column-start: 2; }
+    .journal-page-grid .sidebar h2 {
+      font-family: Novecento Sans Web, sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .journal-page-grid .sidebar div {
+      padding-bottom: 50px;
+      margin-left: 25px; }
+      .journal-page-grid .sidebar div h2,
+      .journal-page-grid .sidebar div p {
+        padding-bottom: 10px; }
+    .journal-page-grid .sidebar .widget-contact-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .journal-page-grid .sidebar .widget-contact-info p:nth-child(3) {
+        color: #248a83; }
+      .journal-page-grid .sidebar .widget-contact-info a {
+        color: #248a83;
+        text-decoration: none; }
+    .journal-page-grid .sidebar .widget-archives p {
+      color: #248a83; }
