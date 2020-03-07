@@ -261,7 +261,6 @@ body {
   padding-bottom: 3rem; }
 
 .shop-header {
-  border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem;
   text-align: center; }
   .shop-header h2 {
@@ -284,28 +283,38 @@ body {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
-    text-transform: uppercase;
-    padding-bottom: 50px; }
+    text-transform: uppercase; }
   .shop-header li {
     margin: 0 1.5rem; }
   .shop-header a {
     color: #248a83;
     text-decoration: none; }
 
-.product-page {
+hr {
+  border: none;
+  border-top: 1.7px dotted lightgray;
+  width: 86%;
+  padding-bottom: 50px; }
+
+.product-page,
+.taxonomy-product-page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1.5rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 5.5rem;
+  padding: 0 100px; }
 
-.shop-grid-item {
+.shop-grid-item,
+.taxonomy-shop-grid-item {
   border: 1px solid #e1e1e1; }
 
-.shop-pic {
+.shop-pic,
+.taxonomy-shop-pic {
   height: 250px;
   overflow: hidden;
   position: relative; }
-  .shop-pic img {
+  .shop-pic img,
+  .taxonomy-shop-pic img {
     left: 50%;
     max-height: 250px;
     max-width: none;
@@ -315,14 +324,17 @@ body {
             transform: translate(-50%, -52%);
     width: auto;
     border-bottom: 5px solid #e1e1e1; }
-  .shop-pic a {
+  .shop-pic a,
+  .taxonomy-shop-pic a {
     color: #248a83; }
 
-.product {
+.product,
+.taxonomy-product {
   font-size: 0.9rem;
   padding: 0.75rem 1rem;
   background-color: #fff; }
-  .product h2 {
+  .product h2,
+  .taxonomy-product h2 {
     background: #fff;
     display: inline;
     font-size: 1rem;
@@ -332,7 +344,8 @@ body {
     line-height: 1.75;
     padding-right: 0.25rem;
     text-transform: none; }
-  .product span {
+  .product span,
+  .taxonomy-product span {
     float: right;
     padding-top: 8px;
     background: #fff; }
@@ -382,3 +395,42 @@ body {
 
 .single-products .shop-icons {
   margin-top: 25px; }
+
+.product-type-title {
+  text-transform: uppercase;
+  font-size: 38px; }
+
+.shop-header p {
+  line-height: 30px;
+  font-family: Merriweather Web, serif;
+  font-size: 20px;
+  color: #404040; }
+
+.journal-page-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+  .journal-page-grid .journal-page-content {
+    grid-column-start: 1; }
+  .journal-page-grid img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-column-start: 2; }
+  .sidebar h2 {
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .sidebar .widget-contact-info p:nth-child(3) {
+    color: #248a83; }
+  .sidebar .widget-contact-info a {
+    color: #248a83; }

@@ -7,7 +7,7 @@
             ));?>
           
 </div>
-
+<hr>
 <section class="product-page">
 
 
