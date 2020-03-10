@@ -1,12 +1,23 @@
-.journal-page-grid {
+.journal-page-grid,
+.single-journal-page-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 0 100px;
+  padding-left: 150px;
+  padding-bottom: 100px;
 
-  .journal-page-content {
+  .journal-page-content,
+  .single-journal-page-content {
     grid-column-start: 1;
     border-right: 1px solid lightgray;
 
+    p {
+      // height: 150px;
+      font-size: 18px;
+      line-height: 35px;
+      width: 90%;
+      color: #404040;
+      margin-top: 15px;
+    }
     img {
       // width: 100%;
       object-fit: cover;
@@ -14,7 +25,46 @@
       margin-right: auto;
       width: 90%;
       height: auto;
+      margin-top: 30px;
     }
+
+    h2 {
+      position: absolute;
+      background-color: #248a83;
+      color: #fff;
+      font-size: 33.6px;
+      font-size: 2.1rem;
+      //   left: 0;
+      padding: 0.75rem 1.5rem;
+      margin-top: 5.25rem;
+      max-width: 75%;
+    }
+
+    button {
+      border: 1px solid black;
+
+      padding: 12px 20px;
+      text-decoration: none;
+      margin-top: 30px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+
+    // background-color: #248a83;
+    // color: #fff;
+    // font-size: 33.6px;
+    // font-size: 2.1rem;
+    // left: 0;
+    // padding: .75rem 1.5rem;
+    // position: absolute;
+    // margin-top: 2.25rem;
+    // max-width: 75%;
+    // top: 0;
   }
 
   .sidebar {
@@ -22,25 +72,36 @@
     flex-direction: column;
     grid-column-start: 2;
 
+    i {
+      color: #404040;
+      padding-right: 10px;
+    }
     h2 {
       font-family: Novecento Sans Web, sans-serif;
-      font-size: 20px;
+      font-size: 24px;
       text-transform: uppercase;
       font-weight: bold;
+      color: #2f1339;
     }
 
     div {
       padding-bottom: 50px;
-      margin-left: 25px;
+      margin-left: 15px;
+      margin-top: 15px;
 
       h2,
       p {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
     }
     .widget-contact-info {
       display: flex;
       flex-direction: column;
+
+      p {
+        font-size: 19px;
+        color: #404040;
+      }
 
       p:nth-child(3) {
         color: #248a83;
@@ -51,8 +112,47 @@
       }
     }
 
+    .widget-business-hours {
+      p {
+        font-size: 18px;
+        color: #404040;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
     .widget-archives p {
       color: #248a83;
+      font-size: 18px;
     }
+  }
+}
+
+.single-journal-page-content p {
+  padding-top: 15px;
+}
+
+.category-tags {
+  display: flex;
+  a {
+    text-decoration: none;
+    color: #248a83;
+    text-transform: uppercase;
+  }
+}
+.shop-icons {
+  padding-top: 15px;
+
+  i {
+    border: 0.5px solid black;
+    padding: 14px 24px;
+  }
+
+  i:hover {
+    background-color: #248a83;
+    color: white;
+    cursor: pointer;
   }
 }
