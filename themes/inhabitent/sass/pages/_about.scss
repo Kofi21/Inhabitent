@@ -44,23 +44,27 @@
 }
 
 .about-content {
-  width: 1120px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 
   h2 {
     text-align: center;
-    font-size: 45px;
+    font-size: 34px;
     margin-bottom: 30px;
     margin-top: 30px;
+    color: #2f1339;
+    font-family: Merriweather Web, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 
   p {
     line-height: 30px;
-    font-size: 18px;
+    font-size: 19.5px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    color: #404040;
   }
 
   p:nth-child(2) {
