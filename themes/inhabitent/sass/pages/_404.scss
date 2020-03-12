@@ -1,0 +1,13 @@
+.error-page-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-left: 150px;
+  padding-bottom: 100px;
+}
+
+.error-page-content {
+  h1 {
+    font-family: Merriweather Web, sans-serif;
+    font-size: 38px;
+  }
+}

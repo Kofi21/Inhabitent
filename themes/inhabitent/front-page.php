@@ -14,7 +14,7 @@
     <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ;?>"></a>
     </div>
 </div>
-<?php get_header(); ?>
+
 
 <?php if( have_posts() ) :
 
@@ -55,6 +55,7 @@
         </div>
 
 
+        <h1 class="product-title">INHABITENT JOURNAL</h1>
 
         <div class="home-journal-section">
         <!-- Custom Post Loop Starts -->
@@ -68,8 +69,15 @@
         ?>
         <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
         <div class="home-journal-container">
+        
+            <div class="home-journal-info">
             <figure><?php the_post_thumbnail(); ?></figure>
-            <p class="home-journal-small"><?php echo get_the_date();?><?php wp_count_comments() ?>Test</p>
+            <p class="home-journal-small"><?php echo get_the_date();?><?php wp_count_comments() ?></p>
+            <span><h2> <a href="<?php echo get_permalink();?>"><?php the_title(); ?></a></h2></span>
+            <button>
+        <a href="<?php echo get_permalink();?>">READ ENTRY</a>
+        </button>
+        </div>
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
     </div>

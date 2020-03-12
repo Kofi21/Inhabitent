@@ -182,7 +182,8 @@ body {
   font-weight: 400;
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
-  text-align: center; }
+  text-align: center;
+  color: #2f1339; }
 
 .home-product-section {
   display: -webkit-box;
@@ -221,21 +222,55 @@ body {
 
 .home-product-container p {
   line-height: 25px;
-  width: 200px;
-  text-align: center; }
+  width: 245px;
+  text-align: center;
+  font-size: 19.5px; }
+
+.home-product-container a {
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  background-color: #248a83;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .home-journal-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 96px; }
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-bottom: 100px; }
   .home-journal-section .home-journal-container {
-    padding: 16px; }
+    padding: 16px;
+    border: 1px solid #e1e1e1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
+    position: relative; }
     .home-journal-section .home-journal-container img {
       width: 100%;
       -o-object-fit: cover;
          object-fit: cover;
       height: 275px; }
+    .home-journal-section .home-journal-container button {
+      border: 1px solid black;
+      padding: 12px 20px;
+      text-decoration: none;
+      margin-top: 30px; }
+      .home-journal-section .home-journal-container button a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 300; }
+    .home-journal-section .home-journal-container .home-journal-info span a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+      color: #248a83;
+      font-family: Merriweather Web, sans-serif; }
 
 .about {
   background-size: cover;
@@ -700,3 +735,13 @@ hr {
     background-color: #248a83;
     color: white;
     cursor: pointer; }
+
+.error-page-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-left: 150px;
+  padding-bottom: 100px; }
+
+.error-page-content h1 {
+  font-family: Merriweather Web, sans-serif;
+  font-size: 38px; }
