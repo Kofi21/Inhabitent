@@ -97,6 +97,9 @@ header {
   .main-menu2 li {
     display: inline-block; }
 
+fieldset label {
+  display: none; }
+
 .footer {
   background-image: url("assets/images/dark-wood.png");
   height: 350px;
@@ -742,6 +745,48 @@ hr {
   padding-left: 150px;
   padding-bottom: 100px; }
 
-.error-page-content h1 {
-  font-family: Merriweather Web, sans-serif;
-  font-size: 38px; }
+.error-page-content {
+  border-right: 1px solid lightgray; }
+  .error-page-content input {
+    width: 190px;
+    height: 30px;
+    font-size: 18px;
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    font-family: Merriweather Web, serif; }
+  .error-page-content h1 {
+    font-family: Merriweather Web, sans-serif;
+    font-size: 38px;
+    color: #404040;
+    font-weight: bold;
+    padding-bottom: 15px; }
+  .error-page-content h2 {
+    padding: 15px 0px;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2f1339;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  .error-page-content p {
+    font-size: 19px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .error-page-content .error-page-posts li,
+  .error-page-content .error-page-posts a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #248a83;
+    font-size: 18px; }
+  .error-page-content .error-page-categories li {
+    padding-bottom: 5px; }
+  .error-page-content .error-page-categories .cat-item a {
+    text-decoration: none;
+    color: #248a83;
+    font-size: 18px; }
+  .error-page-content .error-page-archives select {
+    border-radius: initial;
+    font-size: 16px;
+    font-weight: 200; }

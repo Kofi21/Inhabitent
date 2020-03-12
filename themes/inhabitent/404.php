@@ -3,8 +3,9 @@
     <div class="error-page-content">
 <h1>OOPS! THAT PAGE CAN'T BE FOUND.</h1>
 <p>It looks like nothing was found at this location. Maybe try one of the links below or a search?</p>
-
-<div>
+<input type="text" placeholder="Type and hit enter..." name="search">
+ 
+<div class="error-page-posts">
 <h2>Recent Posts</h2>
 <ul>
 <?php
@@ -19,7 +20,7 @@
 </ul>
 </div>
 
-<div>
+<div class="error-page-categories">
     <h2>Most used categories</h2>
     <ul>
     <?php wp_list_categories( array(
@@ -31,6 +32,7 @@
 </div>
 <div class="error-page-archives">
     <h2>Archives</h2>
+    <p>Try looking in the monthly archives &#128578;</p>
     
         <select class="drop-down">
             <option value="select-month">Select Month</option>
