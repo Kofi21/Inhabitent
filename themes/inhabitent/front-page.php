@@ -22,8 +22,7 @@
     while( have_posts() ) :
         the_post(); ?>
     
-    <h2><?php the_title(); ?></h2>
-    <!-- <h3><?php the_permalink();?></h3> -->
+
     <?php the_content(); ?>
     
     <!-- Loop ends -->
@@ -72,7 +71,7 @@
         
             <div class="home-journal-info">
             <figure><?php the_post_thumbnail(); ?></figure>
-            <p class="home-journal-small"><?php echo get_the_date();?><?php wp_count_comments() ?></p>
+            <p class="home-journal-small"><?php echo get_the_date();?><?php echo wp_count_comments() ?></p>
             <span><h2> <a href="<?php echo get_permalink();?>"><?php the_title(); ?></a></h2></span>
             <button>
         <a href="<?php echo get_permalink();?>">READ ENTRY</a>
