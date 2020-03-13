@@ -61,7 +61,7 @@
         <?php
         $args = array( 
             'post_type' => 'post', 
-            'order' => 'ASC',
+            'order' => 'DESC',
             'numberposts' => 3
             );
         $product_posts = get_posts( $args ); // returns an array of posts
@@ -70,12 +70,16 @@
         <div class="home-journal-container">
         
             <div class="home-journal-info">
-            <figure><?php the_post_thumbnail(); ?></figure>
-            <p class="home-journal-small"><?php echo get_the_date();?><?php echo wp_count_comments() ?></p>
+            <figure><?php the_post_thumbnail(); ?>
+            
+            <figcaption>
+            <p class="home-journal-small"><?php echo get_the_date();?> / <?php echo get_comments_number() . ' Comments' ?></p>
             <span><h2> <a href="<?php echo get_permalink();?>"><?php the_title(); ?></a></h2></span>
             <button>
         <a href="<?php echo get_permalink();?>">READ ENTRY</a>
         </button>
+        </figcaption>
+</figure>
         </div>
         </div>
         <?php endforeach; wp_reset_postdata(); ?>
