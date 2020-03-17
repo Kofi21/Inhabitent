@@ -65,7 +65,10 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8888/inhabitent2'
+    proxy: 'localhost:8888/inhabitent2',
+    snippetOptions: {
+      ignorePaths: 'inhabitent2/wp-admin/**'
+    }
   });
 
   gulp.watch(files).on('change', browserSync.stream);
